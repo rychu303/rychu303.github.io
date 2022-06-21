@@ -5,3 +5,12 @@ body {
 h1 {
   color: yellow;
 }
+
+.top-nav{
+  background-color: blue;
+}
+
+.top-nav-parentP{
+  display: inline-block;
+  max-width: 100%;
+}
