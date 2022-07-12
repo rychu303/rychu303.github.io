@@ -141,7 +141,7 @@ button.resume-btn:before {
 /**********HERO SECTION*************/
 
 .top-hero-container {
-  background-image: url('images/richard-japan-cropped.jpeg');
+  background-image: url('images/richard-japan-cropped.svg');
   width: 100%;
   min-height: 70vh;
   padding-top: 2rem;
