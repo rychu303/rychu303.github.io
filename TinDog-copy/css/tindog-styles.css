@@ -1,0 +1,185 @@
+body {
+  font-family: "montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "montserrat", sans-serif;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+.big-heading {
+  font-family: "montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Containers for styling */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+
+/* Nav bar spacing from page content */
+ #title .container-fluid.navigation-container{
+   padding: 3% 15% 7% 15%;
+  }
+
+.navbar-brand {
+  font-family: Ubuntu;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: montserrat;
+  font-weight: 300;
+}
+
+/* Title Section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+#title .row {
+  padding-bottom: 7%;
+}
+
+/* Download buttons */
+.download-button {
+  margin: 1rem 1rem 1rem 0;
+}
+
+/* Homepage Image style for phone */
+.title-image {
+  width: 20%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 20%;
+}
+
+/* features section styling */
+#features {
+  Padding-top: 5%;
+  position: relative;
+}
+
+.feature-box {
+  ;
+  padding: 5%;
+}
+
+.icon {
+  color: #ef8172;
+  padding-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonials section */
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  ;
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  margin-bottom: 1.5rem;
+}
+
+/* Call to Action Section */
+.cta-header {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+#footer {
+  background-color: #fff;
+  ;
+}
+
+.footer-social-icons {
+  margin: 1.5% 1%;
+}
+
+/**************Media viewport settings*************/
+/* tablet settings */
+@media (max-width: 991px) {
+  #title .container-fluid {
+    margin-bottom: 0;
+    max-height: none;
+  }
+
+
+  .title-image {
+    transform: rotate(0);
+    position: static;
+    width: 60%;
+  }
+}
