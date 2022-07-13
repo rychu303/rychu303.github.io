@@ -71,6 +71,9 @@ footer {
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .secondary-btn {
