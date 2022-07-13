@@ -228,10 +228,12 @@ button.resume-btn:before {
 }
 
 .about-me-row {
+  -webkit-align-items: center;
   align-items: center;
 
 }
 .col-md-3 {
+  -webkit-flex-direct: column;
   flex-direction: column;
 }
 /***************PORTFOLIO SECTION**************/
@@ -247,15 +249,20 @@ button.resume-btn:before {
 /****************PORTFOLIO SECTION CARDS******************/
 
 .card {
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
 .img-card {
   background-color: transparent;
   overflow: hidden;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
   border-style: none;
   min-height: 300px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 section .col-lg-4 {
@@ -264,11 +271,13 @@ section .col-lg-4 {
 }
 
 .card-link {
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .img-card img {
   max-width: 90%;
+  -webkit-align-self: center;
   align-self: center;
   padding: 1rem;
 }
@@ -276,18 +285,29 @@ section .col-lg-4 {
 
 a.card-link:hover {
   background-color: rgb(211,211,211,0.73);
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 1px 1px 7px rgb(0,0,0,0.3);
   box-shadow: 1px 1px 7px rgb(0,0,0,0.3);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .card-img-overlay {
   width: 100%;
   position: absolute;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-content: center;
   align-content: center;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   z-index: -1;
 }
@@ -295,6 +315,7 @@ a.card-link:hover {
 .card-img-background {
   width: 100%;
   min-height: 300px;
+  -webkit-background-size: cover;
   background-size: cover;
   position: absolute;
   z-index: -2;
@@ -312,6 +333,7 @@ a#sfc.card-link:hover{
 
 #sfc .card-img-background {
   background-image: url('images/sfc-footballer-background-compressed.png');
+  -webkit-transform: scale(100%);
   transform: scale(110%);
 }
 
@@ -410,6 +432,7 @@ a#cms-co-gov.card-link:hover{
 
 #cms-co-gov .card-img-background {
   background-image: url('images/maroon-bells-co.jpeg');
+  -webkit-transform: scale(110%);
   transform: scale(110%);
 }
 
@@ -511,20 +534,6 @@ section#resume div.card {
 
 /********* Media Viewport Settings **********/
 
-@media (max-width: 575.98px); {
-
-  section#portfolio .col-lg-4 {
-    padding-top: 0px;
-  }
-
-  .footer-menu li {
-    display: block;
-    border-left: none;
-  }
-
-
-}
-
 @media screen and (max-width: 576px) {
 
   footer {
@@ -579,14 +588,5 @@ section#resume div.card {
   .about-me-row {
     display: flex;
     flex-direction: column;
-  }
-}
-
-/* Turn off parallax scrolling for all tablets and phones.
-Increase/decrease the pixels if needed */
-
-@media only screen and (max-device-width: 1366px); {
-  .top-hero-container {
-    background-attachment: scroll;
   }
 }
