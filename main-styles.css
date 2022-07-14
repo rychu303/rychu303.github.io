@@ -564,6 +564,11 @@ a#cms-co-gov.card-link:hover{
   border-top: 2px solid #EDEDED;
 }
 
+
+.attribution-text-container {
+  padding: 0;
+}
+
 /**********RESUMET SECTION**********/
 
 .resume-container {
