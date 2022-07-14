@@ -14,7 +14,8 @@ h2 {
   font-weight: 200;
   color: #6c7289;
   text-transform: uppercase;
-  letter-spacing: 5px
+  letter-spacing: 5px;
+  line-height: 22px;
 }
 
 section {
@@ -35,7 +36,7 @@ footer {
   background-color: #171717;
   color: white;
   padding-top: 30px;
-  padding-bottom: 12px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -150,6 +151,7 @@ button.resume-btn:before {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -162,11 +164,17 @@ button.resume-btn:before {
   padding-top: 2rem;
   padding-bottom: 2rem;
   position: absolute;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-content: center;
   align-content: center;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -219,6 +227,7 @@ button.resume-btn:before {
   padding-bottom: 100px;
   background-image: url('images/white-texture-background.jpg');
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -279,7 +288,8 @@ section .col-lg-4 {
 }
 
 .img-card img {
-  max-width: 90%;
+  width: auto;
+  max-height: 200px;
   -webkit-align-self: center;
   align-self: center;
   padding: 1rem;
@@ -387,11 +397,6 @@ a:hover tindog-title {
 
 /*******SKATUARY CARD CSS********/
 
-#skatuary img {
-  height: 300px;
-  width: auto;
-}
-
 a#skatuary.card-link:hover{
   background-color: rgb(224,74,34,1);
 }
@@ -405,11 +410,6 @@ a#skatuary.card-link:hover{
 }
 
 /*******BEST BUY CARD CSS********/
-
-#best-buy img {
-  height: 300px;
-  width: auto;
-}
 
 a#best-buy.card-link:hover{
   background-color: rgba(0, 70, 190, 1);
@@ -473,6 +473,7 @@ a#cms-co-gov.card-link:hover{
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -485,11 +486,17 @@ a#cms-co-gov.card-link:hover{
   padding-top: 2rem;
   padding-bottom: 2rem;
   position: absolute;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-content: center;
   align-content: center;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -501,15 +508,18 @@ section#resume div.card {
 
 /**********FOOTER SECTION*********/
 
+footer ul {
+  margin-bottom: 0px;
+}
+
 .footer-menu {
   display: block;
   list-style: none;
-  padding-top: 12px;
 }
 
 .footer-menu li {
   display: inline-block;
-  padding: 0 1rem 0;
+  padding: 0px;
 }
 
 .footer-menu li {
@@ -518,6 +528,11 @@ section#resume div.card {
 
 .footer-menu li:first-child {
   border-left: none;
+  padding-left: 0px;
+}
+
+.footer-menu li:last-child {
+  padding-right: 0px;
 }
 
 .footer-menu li a {
@@ -527,6 +542,8 @@ section#resume div.card {
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 2px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .footer-menu li a:hover {
@@ -538,10 +555,6 @@ section#resume div.card {
 /********* Media Viewport Settings **********/
 
 @media screen and (max-width: 576px) {
-
-  footer {
-    padding-top: 12px;
-  }
 
   .footer-menu {
     padding-right: 32px;
@@ -569,27 +582,67 @@ section#resume div.card {
     width: 70%
   }
 
+  .more-sites {
+    margin-bottom: 65px;
+  }
+
+  .download-resume-container {
+    background-attachment: initial;
+    height: 70vh;
+  }
+
+  .download-resume-container-overlay {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 70vh;
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+  .top-hero-container {
+  background-attachment: initial;
+  width: 100%;
+  }
+
+  #about-me {
+  background-attachment: initial;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  }
+
+  .about-me-row {
+    display: flex;
+    flex-direction: column;
+  }
+
   .headshot {
     padding-bottom: 30px;
     padding-top: 14px;
+  }
+
+  .section-heading-container {
+    margin-bottom: 30px;
   }
 
   .portfolio-row-top {
     padding-top: 50px;
   }
 
-  .section-heading-container {
-    margin-bottom: 42px;
+  .portfolio-row-bottom {
+    padding-bottom: 25px;
   }
 
-  .more-sites {
-    margin-bottom: 65px;
+  .download-resume-container {
+    background-attachment: initial;
+    height: 70vh;
   }
-}
 
-@media (max-width: 767.98){
-  .about-me-row {
-    display: flex;
-    flex-direction: column;
+  .download-resume-container-overlay {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 70vh;
   }
+
 }
