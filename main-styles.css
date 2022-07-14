@@ -501,6 +501,8 @@ a#best-buy.card-link:hover{
   color: white;
   text-align: center;
   text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 a#best-buy {
@@ -731,6 +733,8 @@ footer ul {
 
   .sfc-title {
     font-size: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .download-resume-container {
