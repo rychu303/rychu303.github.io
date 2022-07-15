@@ -503,6 +503,7 @@ a#best-buy.card-link:hover{
   text-transform: uppercase;
   padding-left: 1rem;
   padding-right: 1rem;
+  line-height: 95%;
 }
 
 a#best-buy {
