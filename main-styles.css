@@ -26,8 +26,8 @@
 
 @font-face {
     font-family: 'futuraextra_black';
-    src: url('fonts/webfontkit-Futura/futura_extra_black_regular-webfont.woff2') format('woff2'),
-         url('fonts/webfontkit-Futura/futura_extra_black_regular-webfont.woff') format('woff');
+    src: url('Fonts/webfontkit-Futura/futura_extra_black_regular-webfont.woff2') format('woff2'),
+         url('Fonts/webfontkit-Futura/futura_extra_black_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
