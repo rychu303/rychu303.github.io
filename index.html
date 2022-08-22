@@ -29,7 +29,7 @@
   <!--MAIN NAVIGATION-->
   <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark sticky-top" tabindex="0">
     <div class="container-fluid">
-      <a class="navbar-brand nav-logo" href="index.html">Richard Chung</a>
+      <a class="navbar-brand nav-logo" href="https://richardchung.site/">Richard Chung</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -98,7 +98,7 @@
 
 
         <!--ROW 1 SFC CARD-->
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-12">
           <a id="sfc" class="card img-card card-link" data-bs-toggle="modal" data-bs-target="#sfc-modal" type="button">
             <p class="card-img sfc-title">Southampton Football Club</p>
             <div class="card-img-overlay"></div>
@@ -106,7 +106,7 @@
           </a>
         </div>
         <!--ROW 1 PARAKLETOS CARD-->
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-12">
           <a id="parakletos" class="card img-card card-link" data-bs-toggle="modal" data-bs-target="#parakletos-modal" type="button" tab-index="0">
             <img src="images/parakletos-logo.png" class="card-img" alt="parakletos osteopathic logo">
             <div class="card-img-overlay"></div>
@@ -122,9 +122,9 @@
           </a>
         </div>
       </div>
-      <div class="row portfolio-row-bottom">
+      <div class="row portfolio-row-2">
         <!--ROW 2 SKATUARY CARD-->
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-12">
           <a id="skatuary" class="card img-card card-link" data-bs-toggle="modal" data-bs-target="#skatuary-modal" type="button" tab-index="0">
             <img src="images/SkateHerald_V2_Invisible_2.png" class="card-img" alt="skatuary shield logo">
             <div class="card-img-overlay"></div>
@@ -133,7 +133,7 @@
         </div>
 
         <!--ROW 2 BEST BUY CARD-->
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-12">
           <a id="best-buy" class="card img-card card-link" data-bs-toggle="modal" data-bs-target="#best-buy-modal" type="button" tab-index="0">
             <p class="card-img best-buy-title">Best Buy</p>
             <div class="card-img-overlay"></div>
@@ -145,6 +145,16 @@
         <div class="col-lg-4 col-sm-12">
           <a id="cms-co-gov" class="card img-card card-link" data-bs-toggle="modal" data-bs-target="#cms-co-gov-modal" type="button" tab-index="0">
             <img src="images/co_state_web_portal_rgb_v_2.png" class="card-img" alt="Colorado.gov Logo">
+            <div class="card-img-overlay"></div>
+            <div class="card-img-background"></div>
+          </a>
+        </div>
+      </div>
+      <div class="row portfolio-row-bottom">
+      <!--ROW 3 OTHER PROJECTS CARD-->
+        <div class="col-lg-4 col-sm-12">
+          <a id="other-projects" class="card img-card card-link" data-bs-toggle="modal" data-bs-target="#other-projects-modal" type="button" tab-index="0">
+            <p class="card-img other-projects-title">Other Projects</p>
             <div class="card-img-overlay"></div>
             <div class="card-img-background"></div>
           </a>
@@ -312,6 +322,45 @@
               <p>At the time of the project, these pages were built on Tyler Technologies NIC Division's own custom version of Drupal 8.</p>
 
               <a type="button" class="btn primary-btn" href="https://cms.colorado.gov/all-beginner-courses" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--OTHER PROJECTS MODAL-->
+      <div class="modal fade" id="other-projects-modal" tabindex="-1" aria-labelledby="other-projects-list" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="other-projects-modal">Other Projects</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="images/other-projects-img.png" alt="other projects collage">
+
+              <p>Here are a few additional projects that I've worked on for clients/partners through my previous employers as well as personal projects:</p>
+
+              <ul class='projects-list'>
+                <li class='projects-list-item'>
+                  <h6>Drumkit</h6> 
+                  <p>A Javascript project I completed for a full stack development bootcamp. This is a drum simulator that allows the user to either use keyboard clicks or mouse clicks to play different drum sounds.</p>
+                  <a type="button" class="btn primary-btn projects-list-btn" href="Drum Kit/index.html" target="_blank">Visit App</a>
+                </li>
+                <li class='projects-list-item'>
+                  <h6>Dicee</h6> 
+                  <p>Another Javascript project I created during my bootcamp using a simple randomizer to create a 2-player dice rolling game.</p>
+                  <a type="button" class="btn primary-btn projects-list-btn" href="Dicee/dicee_index.html" target="_blank">Visit App</a>
+                </li>
+                <li class='projects-list-item'>
+                  <h6>Colorado Energy Office</h6> 
+                  <p>This was a site that I helped migrate for the Governor's Colorado Energy Office when I worked at Tyler Technologies NIC Division. This site was built on NIC's Drupal-based Colorado.gov CMS platform.</p>
+                  <a type="button" class="btn primary-btn projects-list-btn" href="https://energyoffice.colorado.gov/" target="_blank">Visit Site</a>
+                </li>
+                <li class='projects-list-item'>
+                  <h6>Alcon</h6>
+                  <p>A teammate and I partnered on this project when I worked at Convercent/OneTrust. I helped build new components for the rows and cards, the footer, accordion dropdowns, as well as various other parts of the site. I also helped create a few of the pages. This site was built on OneTrust's implementation of Acquia's Site Studio.</p>
+                  <a type="button" class="btn primary-btn projects-list-btn" href="https://integrity.alcon.com/" target="_blank">Visit Site</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
