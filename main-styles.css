@@ -53,10 +53,17 @@ h2 {
   line-height: 22px;
 }
 
+h6 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 22px;
+}
+
 section {
 }
 
-p {
+p, li {
   font-size: 14px;
   line-height: 174%;
   letter-spacing: 0.7px;
@@ -531,6 +538,73 @@ a#cms-co-gov.card-link:hover{
   transform: scale(110%);
 }
 
+/*******OTHER PROJECTS CARD CSS********/
+
+a#other-projects.card-link:hover{
+  background-color: rgb(0, 0, 0, 1);
+}
+
+#other-projects .card-img-overlay {
+  background-color: rgb(0, 0, 0, 0.63);
+}
+
+#other-projects .card-img-background {
+  background-image: url('images/richard-profile-3.jpeg');
+  -webkit-transform: scale(110%);
+  transform: scale(100%);
+  background-position: center;
+}
+
+.projects-list {
+  padding-left: 0;
+}
+
+.projects-list-item {
+  list-style: none;
+  padding: 25px 0 25px 0;
+  border-bottom: 1px #EDEDED solid;
+}
+
+.projects-list-item p {
+  margin-bottom: 0;
+}
+
+.projects-list-item:first-child {
+  border-top: 1px #EDEDED solid;
+}
+
+.projects-list-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.projects-list-btn {
+  margin-top: 16px;
+}
+
+.other-projects-title {
+  /* font-family: 'futuraextra_black'; */
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 95%;
+  letter-spacing: 10px;
+  line-height: 60px;
+}
+
+a#other-projects {
+  text-decoration: none;
+}
+
+a:hover .other-projects-title {
+  color: #fff;
+  text-decoration: none;
+}
+
 /******MODALS********/
 
 .modal-title {
@@ -572,7 +646,7 @@ a#cms-co-gov.card-link:hover{
   padding: 0;
 }
 
-/**********RESUMET SECTION**********/
+/**********RESUME SECTION**********/
 
 .resume-container {
   margin-top: 50px;
@@ -763,4 +837,10 @@ footer ul {
   width: 100%;
   }
 
+}
+
+@media screen and (max-width: 1200px){
+  .other-projects-title {
+    font-size: 2rem;
+  }
 }
